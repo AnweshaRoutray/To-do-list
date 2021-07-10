@@ -1,0 +1,145 @@
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #360033;  /*  fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0b8793, #360033); /*  Chrome 10-25, Safari 5.1-6  */
+  background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+  font-family: 'Kirang Haerang', cursive;
+  
+}
+h1{
+  font-family: 'Lobster Two', cursive;
+  font-size: 2.5rem;
+  
+}
+h1 ,p , .formfill{
+  min-height:10vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formfill input,.formfill button{
+  padding: 2vh;
+  border: none;
+}
+
+.formfill button{
+  color: #0b8793;
+  background-color: #360033;
+  cursor:pointer;
+  transition: all 0.5s ease;
+}
+.formfill button:hover{
+  background-color: #0b8793;
+  color: #360033;
+}
+ul{
+  min-width:30%;
+  list-style: none;
+}
+
+.container { 
+display:flex;
+justify-content:center;
+align-items:center;
+} 
+.todo {
+  display:flex;
+  margin:0.5rem;
+  justify-content: space-between;
+  background-color: white;
+  color:black;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.todo .item{
+  padding:1.5vh;
+  margin:1px;
+  flex:1;
+ 
+}
+ .delete, .didit{
+ padding:1.5vh;
+ margin:1px;
+  color: #4aaeb8;
+  background-color:#4e204d;
+  cursor:pointer;
+}
+.delete:hover,.didit:hover{
+  background-color:#4aaeb8;
+  color:#4e204d;
+}
+.fa-trash,.fa-check-square{
+  pointer-events: none;
+}
+.fall{
+  transform:translateY(20px); 
+  opacity:0; 
+}
+  
+select
+{
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.select{
+    margin:1rem;
+    position:relative;
+    overflow:hidden;
+}
+select{
+  color:black;
+  font-family: 'Kirang Haerang', cursive;
+  width:10rem;
+  cursor:pointer;
+  padding:1vh;
+}
+
+.select::after{
+  content: "\25BC";
+  position:absolute;
+  background: #360033;
+  color:#0b8793;
+  top:0;
+  right:0;
+  padding:1vh;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+.select:hover::after{
+  color: #360033;
+  background:#0b8793;
+}
+#deleteall{
+  padding:8px;
+  border:black solid 1px;
+  border-radius: 10px;
+  background: rgb(206, 45, 45);
+  opacity: 0.8;
+  color:black;
+  font-family: 'Kirang Haerang', cursive;
+
+}
+#deleteall:hover{
+  opacity:0.5;
+}
+.show {
+  display: flex;
+  justify-content: center; 
+}
+h2 {
+    display: block;
+    padding:5px;font-size:14px;background-color:#ffffff;
+    margin-top: 1rem;
+}
