@@ -112,6 +112,7 @@ function clearthelist(){
 	for(var i=0;i<n;i++){
 		d[0].remove();
 	}
+	counter=0;
 	p.innerText="you have 0 tasks to be done!";
 }
 
